@@ -16,6 +16,10 @@ body,html {
     z-index: 999;
 }
 
+.menu-toggle:hover {
+    color: #fff;
+}
+
 .mast-head {
     padding-top: 40vh;
     height: 100vh;
@@ -67,6 +71,28 @@ hr {
 .bg-1 {
     background-color: white;
     color: black;
+}
+
+.slideNavbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 70px;
+    transition: 0.5s;
+    right: 0;
+}
+
+.slideNavbar a {
+    color: white;
+    font-weight: 700;
+}
+
+.slideNavbar li {
+    margin-top: 1rem;
 }
 
 @media only screen and (min-width: 768px){

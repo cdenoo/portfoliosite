@@ -16,8 +16,23 @@
         <title>E-Portfolio Cedric Denoo</title>
     </head>
     <body id="page-top">
+
         <!-- Nav -->
-        <a class="menu-toggle rounded" href="#">
+        <div class="slideNavbar" id="slideNavbar">
+            <ul>
+                <li><a href="#page-top">Homepage</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#extrainfo">Extra info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <a id="openNavbar" class="menu-toggle rounded" href="javascript:void(0);" onclick="openNavbar();">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a id="closeNavbar" class="menu-toggle rounded" href="javascript:void(0);" onclick="closeNavbar();" style="visibility: hidden">
             <i class="fas fa-bars"></i>
         </a>
 
@@ -25,7 +40,7 @@
         <header class="mast-head">
             <div class="container text-center">
                 <h1>Meer weten?</h1>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">
+                <a class="btn btn-primary btn-xl" href="#about">
                     <i class="fas fa-angle-down aboutButtonLeftArrow"></i>Ga naar about<i class="fas fa-angle-down aboutButtonRightArrow"></i>
                 </a>
             </div>
@@ -82,6 +97,20 @@
         <section class="content-section bg-0" id="contact">
             <!-- TODO: contactgegevens + contactformulier -->
         </section>
+
+        <script>
+            function openNavbar() {
+                document.getElementById("slideNavbar").style.width = "250px";
+                document.getElementById("openNavbar").style.visibility="hidden";
+                document.getElementById("closeNavbar").style.visibility="visible";
+            }
+
+            function closeNavbar() {
+                document.getElementById("slideNavbar").style.width = "0";
+                document.getElementById("openNavbar").style.visibility="visible";
+                document.getElementById("closeNavbar").style.visibility="hidden";
+            }
+        </script>
 
         <!-- Bootstrap scripts -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
