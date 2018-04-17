@@ -53,6 +53,14 @@ hr {
     width: 8rem;
 }
 
+.aboutButtonLeftArrow {
+    margin-right: 15px;
+}
+
+.aboutButtonRightArrow {
+    margin-left: 15px;
+}
+
 @media only screen and (min-width: 768px){
     /*For desktops*/
 
