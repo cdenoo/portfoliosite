@@ -20,12 +20,12 @@
         <!-- Nav -->
         <div class="slideNavbar" id="slideNavbar">
             <ul>
-                <li><a href="#page-top">Homepage</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#extrainfo">Extra info</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a onclick="scrollToElement('#page-top');" href="javascript:void(0);">Homepage</a></li>
+                <li><a onclick="scrollToElement('#about');" href="javascript:void(0);">About</a></li>
+                <li><a onclick="scrollToElement('#cv');" href="javascript:void(0);">CV</a></li>
+                <li><a onclick="scrollToElement('#portfolio');" href="javascript:void(0);">Portfolio</a></li>
+                <li><a onclick="scrollToElement('#extrainfo');" href="javascript:void(0);">Extra info</a></li>
+                <li><a onclick="scrollToElement('#contact');" href="javascript:void(0);">Contact</a></li>
             </ul>
         </div>
 
@@ -40,7 +40,7 @@
         <header class="mast-head">
             <div class="container text-center">
                 <h1>Meer weten?</h1>
-                <a class="btn btn-primary btn-xl" href="#about">
+                <a class="btn btn-primary btn-xl" onclick="scrollToElement('#about');" href="javascript:void(0);">
                     <i class="fas fa-angle-down aboutButtonLeftArrow"></i>Ga naar about<i class="fas fa-angle-down aboutButtonRightArrow"></i>
                 </a>
             </div>
@@ -110,11 +110,19 @@
                 document.getElementById("openNavbar").style.visibility="visible";
                 document.getElementById("closeNavbar").style.visibility="hidden";
             }
+
+            function scrollToElement(target){
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                closeNavbar();
+            }
         </script>
 
         <!-- Bootstrap scripts -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
         <!-- Font Awesome scripts -->
