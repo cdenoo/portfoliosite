@@ -106,12 +106,13 @@ hr {
     top: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 70px;
+    padding-top: 12rem;
     transition: 0.5s;
     right: 0;
 }
 
 .slideNavbar a {
+    text-decoration: underline;
     color: white;
     font-weight: 700;
 }
