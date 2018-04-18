@@ -132,6 +132,15 @@ hr {
     margin-top: 2rem;
 }
 
+.small-content-panel-heading {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.small-content-panel-text {
+    text-align: left;
+}
+
 /*For desktops*/
 @media only screen and (min-width: 1440px){
 
