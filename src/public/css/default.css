@@ -16,14 +16,32 @@ body,html {
     z-index: 999;
 }
 
+.my-bars {
+    color: black;
+    margin-top: 3rem;
+}
+
 .menu-toggle:hover {
     color: #fff;
 }
 
 .big-icon {
-    margin-top: 3rem;
     font-size: 4rem;
-    color: black;
+}
+
+#about-button-text {
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+.aboutButtonLeftArrow {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.aboutButtonRightArrow {
+    font-size: 3rem;
+    margin-left: 15px;
 }
 
 .mast-head {
@@ -80,14 +98,6 @@ hr {
     border-color: white;
 }
 
-.aboutButtonLeftArrow {
-    margin-right: 15px;
-}
-
-.aboutButtonRightArrow {
-    margin-left: 15px;
-}
-
 .bg-0 {
     background-color: #1E434C;
     color: white;
@@ -123,7 +133,7 @@ hr {
 }
 
 /*For desktops*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1440px){
 
     .menu-toggle {
         width: 5rem;

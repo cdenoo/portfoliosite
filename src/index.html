@@ -30,10 +30,10 @@
         </div>
 
         <a id="openNavbar" class="menu-toggle rounded" href="javascript:void(0);" onclick="openNavbar();">
-            <i class="fas fa-bars big-icon"></i>
+            <i class="fas fa-bars big-icon my-bars"></i>
         </a>
         <a id="closeNavbar" class="menu-toggle rounded" href="javascript:void(0);" onclick="closeNavbar();" style="visibility: hidden">
-            <i class="fas fa-bars big-icon"></i>
+            <i class="fas fa-bars big-icon my-bars"></i>
         </a>
 
         <!-- Header -->
@@ -43,7 +43,13 @@
                     <div class="headertitle">
                         <h1>Meer weten?</h1>
                         <a class="btn btn-primary btn-xl" onclick="scrollToElement('#about');" href="javascript:void(0);">
-                            <i class="fas fa-angle-down aboutButtonLeftArrow"></i>Ga naar about<i class="fas fa-angle-down aboutButtonRightArrow"></i>
+                            <div class="col-12">
+                                <div class="row">
+                                    <i class="fas fa-angle-down aboutButtonLeftArrow big-icon"></i>
+                                    <p id="about-button-text">Ga naar about</p>
+                                    <i class="fas fa-angle-down aboutButtonRightArrow big-icon"></i>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
