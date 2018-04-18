@@ -11,7 +11,7 @@ body,html {
     height: 10rem;
     text-align: center;
     color: #fff;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     line-height: 4rem;
     z-index: 999;
 }
@@ -115,13 +115,27 @@ hr {
     text-decoration: underline;
     color: white;
     font-weight: 700;
+    font-size: 170%;
 }
 
 .slideNavbar li {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
+/*For desktops*/
 @media only screen and (min-width: 768px){
-    /*For desktops*/
 
+    .menu-toggle {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .big-icon {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .slideNavbar li {
+        margin-top: .6rem;
+    }
 }
