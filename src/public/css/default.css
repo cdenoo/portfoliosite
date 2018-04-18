@@ -5,14 +5,14 @@ body,html {
 
 .menu-toggle {
     position: fixed;
-    right: 15px;
-    top: 15px;
-    width: 50px;
-    height: 50px;
+    right: 30px;
+    top: 30px;
+    width: 10rem;
+    height: 10rem;
     text-align: center;
     color: #fff;
-    background: rgba(52, 58, 64, 0.5);
-    line-height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    line-height: 4rem;
     z-index: 999;
 }
 
@@ -20,15 +20,39 @@ body,html {
     color: #fff;
 }
 
+.big-icon {
+    margin-top: 3rem;
+    font-size: 4rem;
+    color: black;
+}
+
 .mast-head {
     padding-top: 40vh;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background-image: url('../images/escheresque_ste.png');
+    background-size: 4% auto;
+    background-repeat: repeat;
 }
 
 .mast-head > .container {
     max-height: 20vh;
+    background-color: white;
+}
+
+.headertitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 75vw;
+    float: none;
+    margin: 0 auto;
+    color: white;
+}
+
+.headertitle > h1 {
+    font-weight: 600;
+    font-size: 450%;
+    color: floralwhite
 }
 
 .text-center {
@@ -53,6 +77,7 @@ body,html {
 
 hr {
     width: 8rem;
+    border-color: white;
 }
 
 .aboutButtonLeftArrow {
