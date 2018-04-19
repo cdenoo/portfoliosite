@@ -45,7 +45,7 @@ body,html {
 }
 
 .mast-head {
-    padding-top: 40vh;
+    padding-top: 25vh;
     height: 100vh;
     width: 100%;
     background-image: url('../images/escheresque_ste.png');
@@ -70,7 +70,8 @@ body,html {
 .headertitle > h1 {
     font-weight: 600;
     font-size: 450%;
-    color: floralwhite
+    color: floralwhite;
+    margin-bottom: 3rem;
 }
 
 .text-center {
@@ -78,8 +79,8 @@ body,html {
 }
 
 .content-section {
-    height: 100vh;
     padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .left-aligned {
@@ -132,6 +133,10 @@ hr {
     margin-top: 2rem;
 }
 
+.small-content-panel {
+    padding: 3rem;
+}
+
 .small-content-panel-heading {
     font-size: 1.3em;
     text-decoration: underline;
@@ -139,6 +144,15 @@ hr {
 
 .small-content-panel-text {
     text-align: left;
+}
+
+embed {
+    height: 100%;
+    width: 100%;
+}
+
+.embed-container {
+    height: 60vh;
 }
 
 /*For desktops*/
