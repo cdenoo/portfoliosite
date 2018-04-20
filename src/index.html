@@ -216,6 +216,31 @@
         <!-- Contact -->
         <section class="content-section bg-0" id="contact">
             <!-- TODO: contactgegevens + contactformulier -->
+            <div class="container">
+                <p class="small-content-panel-heading text-center">Contact</p>
+                <p class="small-content-panel-text">
+                    Stuur mij een mail op <a href="mailto:cedric.denoo@student.hogent.be">cedric.denoo@student.hogent.be</a> of gebruik het formulier dat uw mailclient opent (opgepast! werkt niet met alle systemen).
+                </p>
+
+                <br>
+
+                <form action="mailto:cedric.denoo@student.hogent.be" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="inputEmail">Uw e-mailadres</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                        <small id="emailDetails" class="form-text text-muted">Dit is nodig zodat ik u terug kan e-mailen.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputName">Uw naam</label>
+                        <input type="text" class="form-control" id="inputName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTextarea">Tekst te verzenden</label>
+                        <textarea class="form-control" id="inputTextarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Verzend</button>
+                </form>
+            </div>
         </section>
 
         <script>
