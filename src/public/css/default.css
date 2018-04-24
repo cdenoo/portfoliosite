@@ -134,7 +134,7 @@ hr {
 }
 
 .small-content-panel {
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .small-content-panel-heading {
@@ -153,6 +153,7 @@ embed {
 
 .embed-container {
     height: 60vh;
+    max-width: 100vw;
 }
 
 /*For desktops*/
@@ -170,5 +171,9 @@ embed {
 
     .slideNavbar li {
         margin-top: .6rem;
+    }
+
+    .embed-container {
+        max-width: 35vw;
     }
 }

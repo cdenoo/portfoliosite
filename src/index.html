@@ -72,7 +72,7 @@
                 <div class="row">
                     <!-- Foto -->
                     <div class="col-sm-12 col-md-6 col-lg-6 small-content-panel">
-                        <img src="public/images/portret.png" alt="Portretfoto">
+                        <img src="public/images/portret.jpg" alt="Portretfoto">
                     </div>
 
                     <!-- Scholing -->
@@ -238,7 +238,7 @@
                         <label for="inputTextarea">Tekst te verzenden</label>
                         <textarea class="form-control" id="inputTextarea" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Verzend</button>
+                    <button type="submit" class="btn btn-primary" onclick="sendEmail();">Verzend</button>
                 </form>
             </div>
         </section>
@@ -261,6 +261,12 @@
                     scrollTop: $(target).offset().top
                 }, 1000);
                 closeNavbar();
+            }
+
+            function sendEmail(){
+                var formattedBody = document.getElementById("inputTextarea").value;
+                var mailToLink = "mailto:cedric.denoo@student.hogent.be?body=" + encodeURIComponent(formattedBody);
+                window.location.href = mailToLink;
             }
         </script>
 
