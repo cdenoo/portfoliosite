@@ -155,11 +155,8 @@ embed {
     max-width: 100vw;
 }
 
-.abilities-list {
+.abilities-list, .interesses-list {
     list-style: none;
-}
-
-.abilities-list {
     padding: 0;
 }
 
@@ -182,6 +179,15 @@ embed {
 .show {
     background-color: dimgray!important;
     color: white !important;
+}
+
+.interesses-list {
+    max-width: 30vw;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
 }
 
 /*For desktops*/
