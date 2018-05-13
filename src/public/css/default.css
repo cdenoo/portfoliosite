@@ -5,27 +5,211 @@ body,html {
 
 .menu-toggle {
     position: fixed;
-    right: 15px;
-    top: 15px;
-    width: 50px;
-    height: 50px;
+    right: 30px;
+    top: 30px;
+    width: 10rem;
+    height: 10rem;
     text-align: center;
     color: #fff;
-    background: rgba(52, 58, 64, 0.5);
-    line-height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 4rem;
     z-index: 999;
-    padding-top: 16px;
+}
+
+.my-bars {
+    color: black;
+    margin-top: 3rem;
+}
+
+.menu-toggle:hover {
+    color: #fff;
+}
+
+.big-icon {
+    font-size: 4rem;
+}
+
+#about-button-text {
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+.aboutButtonLeftArrow {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.aboutButtonRightArrow {
+    font-size: 3rem;
+    margin-left: 15px;
 }
 
 .mast-head {
-    min-height: 30rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    height: auto;
+    padding-top: 25vh;
+    height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background-image: url('../images/escheresque_ste.png');
+    background-size: 4% auto;
+    background-repeat: repeat;
+}
+
+.mast-head > .container {
+    max-height: 20vh;
+    background-color: white;
+}
+
+.headertitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 75vw;
+    float: none;
+    margin: 0 auto;
+    color: white;
+}
+
+.headertitle > h1 {
+    font-weight: 600;
+    font-size: 450%;
+    color: floralwhite;
+    margin-bottom: 3rem;
 }
 
 .text-center {
     text-align: center;
+}
+
+.content-section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.paneled-content {
+    border: solid 2px #C99E10;
+    border-radius: 5px;
+    margin: 5vh;
+    padding: 0.5rem;
+}
+
+hr {
+    width: 8rem;
+    border-color: white;
+}
+
+.bg-0 {
+    background-image: url('../images/funky-lines.png');
+}
+
+.bg-1 {
+    background-image: url('../images/footer_lodyas.png');
+    color: white;
+}
+
+.slideNavbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 12rem;
+    transition: 0.5s;
+    right: 0;
+}
+
+.slideNavbar a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 700;
+    font-size: 170%;
+}
+
+.slideNavbar li {
+    margin-top: 2rem;
+}
+
+.small-content-panel {
+    padding: 1.5rem;
+}
+
+.small-content-panel-heading {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.small-content-panel-text {
+    text-align: left;
+}
+
+.pdfobject-container {
+    height: 60vh;
+}
+
+.pdfobject {
+    border: 1px solid #666;
+}
+
+.abilities-list, .interesses-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fa-caret-right {
+    margin: 0;
+    padding: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: darkblue;
+}
+
+.show {
+    background-color: dimgray!important;
+    color: white !important;
+}
+
+.interesses-list {
+    max-width: 30vw;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.intro {
+    font-weight: 100;
+}
+
+/*For desktops*/
+@media only screen and (min-width: 1440px){
+
+    .menu-toggle {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .big-icon {
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .slideNavbar li {
+        margin-top: .6rem;
+    }
 }
