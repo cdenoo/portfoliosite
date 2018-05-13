@@ -203,9 +203,7 @@
             <h2>Curriculum Vitae</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 small-content-panel">
-                    <div class="embed-container">
-                        <embed src="public/docs/placeholder.pdf" type="application/pdf">
-                    </div>
+                    <div id="cv-pdf"></div>
                 </div>
             </div>
         </div>
@@ -264,17 +262,23 @@
     <section class="content-section bg-0" id="contact">
         <!-- TODO: contactgegevens + contactformulier -->
         <h2 class="text-center">Contact</h2>
-        <div class="container">
-            <h3>E-Mail</h3>
-            <p class="small-content-panel-text">
-                <a href="mailto:cedric.denoo@student.hogent.be">cedric.denoo@student.hogent.be</a>
-            </p>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h3>E-Mail</h3>
+                    <p class="small-content-panel-text text-center">
+                        <a href="mailto:cedric.denoo@student.hogent.be">cedric.denoo@student.hogent.be</a>
+                    </p>
+                </div>
 
-            <h3>LinkedIn</h3>
-            <p class="small-content-panel-text">
-                <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-                <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/cedric-denoo-96895515b" data-format="inline" data-related="false"></script>
-            </p>
+                <div class="col-sm-12 col-md-6">
+                    <h3>LinkedIn</h3>
+                    <p class="small-content-panel-text text-center">
+                        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/cedric-denoo-96895515b" data-format="inline" data-related="false"></script>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -323,6 +327,7 @@
             PDFObject.embed('./public/docs/DISC-test.pdf', '#disc-pdf');
             PDFObject.embed('./public/docs/placeholder.pdf', '#mbti-pdf');
             PDFObject.embed('./public/docs/placeholder.pdf', '#offman-pdf');
+            PDFObject.embed('./public/docs/placeholder.pdf', '#cv-pdf');
         });
 
         addEventListener(document, "touchstart", function(e) {
