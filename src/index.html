@@ -143,7 +143,7 @@
                         Ik wil elke ochtend opstaan en met goesting aan mijn werk beginnen.
                     </p>
                     <p class="small-content-panel-text">
-                        Ik wil mijn dagen spenderen met mensen die ik kan respecteren en apprecieren.
+                        Ik wil mijn dagen spenderen met mensen die ik kan respecteren en appreci&euml;ren.
                     </p>
                     <p class="small-content-panel-text">
                         Ik wil werken voor een onderneming die zich met hart en toewijding wil inzetten voor verbetering en vooruitgang.
@@ -321,19 +321,12 @@
         }
 
         $(document).ready(function () {
-            $('#myTab li:last-child a').tab('show');
-
             PDFObject.embed('./public/docs/Competence Indicator.pdf', '#comp-pdf');
             PDFObject.embed('./public/docs/DISC-test.pdf', '#disc-pdf');
             PDFObject.embed('./public/docs/placeholder.pdf', '#mbti-pdf');
             PDFObject.embed('./public/docs/placeholder.pdf', '#offman-pdf');
             PDFObject.embed('./public/docs/placeholder.pdf', '#cv-pdf');
         });
-
-        addEventListener(document, "touchstart", function(e) {
-            e.preventDefault();   // does nothing since the listener is passive
-            console.log(e.defaultPrevented);  // still false
-        }, Modernizr.passiveeventlisteners ? {passive: true} : false);
     </script>
 </body>
 
