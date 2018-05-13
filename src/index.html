@@ -75,8 +75,8 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <h1>Over Cedric Denoo</h1>
-                    <h2>Een korte introductie</h2>
+                    <h2>Over Cedric Denoo</h2>
+                    <h3 class="intro">Een korte introductie</h3>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
 
                 <!-- Scholing -->
                 <div class="col-sm-12 col-md-6 col-lg-6 small-content-panel">
-                    <h3>Scholing</h3>
+                    <h4>Scholing</h4>
                     <div class="paneled-content">
                         Vrije Universiteit Brussel
                         <hr> 2013 - 2017
@@ -176,27 +176,19 @@
                     <div class="tab-content" id="myTabContent">
                         <!-- Offman -->
                         <div class="tab-pane active" id="offman" role="tabpanel" aria-labelledby="offman-tab">
-                            <div class="embed-container">
-                                <embed src="public/docs/placeholder.pdf" type="application/pdf">
-                            </div>
+                            <div id="offman-pdf"></div>
                         </div>
                         <!-- MBTI -->
                         <div class="tab-pane" id="mbti" role="tabpanel" aria-labelledby="mbti-tab">
-                            <div class="embed-container">
-                                <embed src="public/docs/placeholder.pdf" type="application/pdf">
-                            </div>
+                            <div id="mbti-pdf"></div>
                         </div>
                         <!-- Comp ind -->
                         <div class="tab-pane" id="comp" role="tabpanel" aria-labelledby="comp-tab">
-                            <div class="embed-container">
-                                <embed src="public/docs/Competence%20Indicator.pdf" type="application/pdf">
-                            </div>
+                            <div id="comp-pdf"></div>
                         </div>
                         <!-- DISC -->
                         <div class="tab-pane" id="disc" role="tabpanel" aria-labelledby="disc-tab">
-                            <div class="embed-container">
-                                <embed src="public/docs/DISC-test.pdf" type="application/pdf">
-                            </div>
+                            <div id="disc-pdf"></div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +200,7 @@
     <section class="content-section bg-1" id="cv">
         <!-- TODO: PDF view + download -->
         <div class="container text-center">
-            <h1>Curriculum Vitae</h1>
+            <h2>Curriculum Vitae</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 small-content-panel">
                     <div class="embed-container">
@@ -223,7 +215,7 @@
     <section class="content-section bg-0" id="portfolio">
         <!-- TODO: Projecten, stage, ervaringen -->
         <div class="container text-center">
-            <h1>Portfolio</h1>
+            <h2>Portfolio</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 small-content-panel">
                     <p class="small-content-panel-heading text-center">Projecten</p>
@@ -254,7 +246,7 @@
     <section class="content-section bg-1" id="extrainfo">
         <!-- TODO: Niet IT-gerelateerde info -->
         <div class="container text-center">
-            <h1>Extra info</h1>
+            <h2>Extra info</h2>
             <div class="row">
                 <div class="col-6 col-centered">
                     <p class="small-content-panel-heading text-center">Interesses</p>
@@ -271,11 +263,17 @@
     <!-- Contact -->
     <section class="content-section bg-0" id="contact">
         <!-- TODO: contactgegevens + contactformulier -->
+        <h2 class="text-center">Contact</h2>
         <div class="container">
-            <p class="small-content-panel-heading text-center">Contact</p>
+            <h3>E-Mail</h3>
             <p class="small-content-panel-text">
-                Stuur mij een mail op
                 <a href="mailto:cedric.denoo@student.hogent.be">cedric.denoo@student.hogent.be</a>
+            </p>
+
+            <h3>LinkedIn</h3>
+            <p class="small-content-panel-text">
+                <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/cedric-denoo-96895515b" data-format="inline" data-related="false"></script>
             </p>
         </div>
     </section>
@@ -295,6 +293,8 @@
         crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c"
         crossorigin="anonymous"></script>
+
+    <script src="./public/js/pdfobject.js"></script>
 
     <script>
         function openNavbar() {
@@ -318,7 +318,17 @@
 
         $(document).ready(function () {
             $('#myTab li:last-child a').tab('show');
+
+            PDFObject.embed('./public/docs/Competence Indicator.pdf', '#comp-pdf');
+            PDFObject.embed('./public/docs/DISC-test.pdf', '#disc-pdf');
+            PDFObject.embed('./public/docs/placeholder.pdf', '#mbti-pdf');
+            PDFObject.embed('./public/docs/placeholder.pdf', '#offman-pdf');
         });
+
+        addEventListener(document, "touchstart", function(e) {
+            e.preventDefault();   // does nothing since the listener is passive
+            console.log(e.defaultPrevented);  // still false
+        }, Modernizr.passiveeventlisteners ? {passive: true} : false);
     </script>
 </body>
 

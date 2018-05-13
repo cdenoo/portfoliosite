@@ -155,6 +155,9 @@ embed {
     max-width: 100vw;
 }
 
+.pdfobject-container { height: 500px;}
+.pdfobject { border: 1px solid #666; }
+
 .abilities-list, .interesses-list {
     list-style: none;
     padding: 0;
@@ -188,6 +191,14 @@ embed {
 .col-centered {
     float: none;
     margin: 0 auto;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.intro {
+    font-weight: 100;
 }
 
 /*For desktops*/
