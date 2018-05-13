@@ -145,18 +145,13 @@ hr {
     text-align: left;
 }
 
-embed {
-    height: 100%;
-    width: 100%;
-}
-
-.embed-container {
+.pdfobject-container {
     height: 60vh;
-    max-width: 100vw;
 }
 
-.pdfobject-container { height: 60vh;}
-.pdfobject { border: 1px solid #666; }
+.pdfobject {
+    border: 1px solid #666;
+}
 
 .abilities-list, .interesses-list {
     list-style: none;
