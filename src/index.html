@@ -154,6 +154,7 @@
             <!-- Persoonlijkheidstests -->
             <div class="row">
                 <div class="col-12">
+                    <h3>Persoonlijkheidstests</h3>
                     <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="offman-tab" data-toggle="tab" href="#offman" role="tab" aria-controls="offman" aria-selected="true">Offman</a>
@@ -175,28 +176,24 @@
                     <div class="tab-content" id="myTabContent">
                         <!-- Offman -->
                         <div class="tab-pane active" id="offman" role="tabpanel" aria-labelledby="offman-tab">
-                            Offman
                             <div class="embed-container">
                                 <embed src="public/docs/placeholder.pdf" type="application/pdf">
                             </div>
                         </div>
                         <!-- MBTI -->
                         <div class="tab-pane" id="mbti" role="tabpanel" aria-labelledby="mbti-tab">
-                            MBTI
                             <div class="embed-container">
                                 <embed src="public/docs/placeholder.pdf" type="application/pdf">
                             </div>
                         </div>
                         <!-- Comp ind -->
                         <div class="tab-pane" id="comp" role="tabpanel" aria-labelledby="comp-tab">
-                            Comp
                             <div class="embed-container">
                                 <embed src="public/docs/Competence%20Indicator.pdf" type="application/pdf">
                             </div>
                         </div>
                         <!-- DISC -->
                         <div class="tab-pane" id="disc" role="tabpanel" aria-labelledby="disc-tab">
-                            DISC
                             <div class="embed-container">
                                 <embed src="public/docs/DISC-test.pdf" type="application/pdf">
                             </div>
@@ -261,25 +258,6 @@
                 <a href="mailto:cedric.denoo@student.hogent.be">cedric.denoo@student.hogent.be</a> of gebruik het formulier dat uw mailclient opent (opgepast! werkt niet
                 met alle systemen).
             </p>
-
-            <br>
-
-            <form action="mailto:cedric.denoo@student.hogent.be" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <label for="inputEmail">Uw e-mailadres</label>
-                    <input type="email" class="form-control" id="inputEmail" required>
-                    <small id="emailDetails" class="form-text text-muted">Dit is nodig zodat ik u terug kan e-mailen.</small>
-                </div>
-                <div class="form-group">
-                    <label for="inputName">Uw naam</label>
-                    <input type="text" class="form-control" id="inputName" required>
-                </div>
-                <div class="form-group">
-                    <label for="inputTextarea">Tekst te verzenden</label>
-                    <textarea class="form-control" id="inputTextarea" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" onclick="sendEmail();">Verzend</button>
-            </form>
         </div>
     </section>
 
@@ -317,12 +295,6 @@
                 scrollTop: $(target).offset().top
             }, 1000);
             closeNavbar();
-        }
-
-        function sendEmail() {
-            var formattedBody = document.getElementById("inputTextarea").value;
-            var mailToLink = "mailto:cedric.denoo@student.hogent.be?body=" + encodeURIComponent(formattedBody);
-            window.location.href = mailToLink;
         }
 
         $(document).ready(function () {

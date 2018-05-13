@@ -187,8 +187,4 @@ embed {
     .slideNavbar li {
         margin-top: .6rem;
     }
-
-    .embed-container {
-        max-width: 35vw;
-    }
 }
