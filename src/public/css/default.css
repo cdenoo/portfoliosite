@@ -100,13 +100,12 @@ hr {
 }
 
 .bg-0 {
-    background-color: #1E434C;
-    color: white;
+    background-image: url('../images/funky-lines.png');
 }
 
 .bg-1 {
-    background-color: white;
-    color: black;
+    background-image: url('../images/footer_lodyas.png');
+    color: white;
 }
 
 .slideNavbar {
@@ -169,6 +168,20 @@ embed {
     padding: 0;
     margin-right: 1rem;
     margin-left: 1rem;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: darkblue;
+}
+
+.show {
+    background-color: dimgray!important;
+    color: white !important;
 }
 
 /*For desktops*/
